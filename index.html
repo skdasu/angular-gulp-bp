@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="oncommand" data-framework="angularjs">
+	<head>
+		<meta charset="utf-8">
+		<title>AngularJS • TodoMVC</title>
+    <!-- build:css app/assets/styles/vendor.css -->
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+    <!-- endbuild -->
+    <!-- build:css app/assets/styles/main.css -->
+    <link rel="stylesheet" type="text/css" href="app/assets/styles/fonts.css">
+    <link rel="stylesheet" type="text/css" href="app/assets/styles/main.css">
+	<link rel="stylesheet" type="text/css" href="app/assets/styles/styles.css">
+    <!-- endbuild -->
+		<style>[ng-cloak] { display: none; }</style>
+	</head>
+	<body>
+    <img src="app/assets/images/logo.svg" class="logo">
+		<section id="todoapp" ng-view></section>
+		<footer id="info">
+			<p>Double-click to edit a todo</p>
+			<p>Credits:
+				<a href="http://twitter.com/cburgdorf">Christoph Burgdorf</a>,
+				<a href="http://ericbidelman.com">Eric Bidelman</a>,
+				<a href="http://jacobmumm.com">Jacob Mumm</a> and
+				<a href="http://blog.igorminar.com">Igor Minar</a>
+			</p>
+			<p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
+		</footer>
+    <!-- build:js app/js/vendor.js -->
+		<script src="node_modules/todomvc-common/base.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+		<script src="node_modules/angular-route/angular-route.js"></script>
+    <!-- endbuild -->
+    <!-- build:js app/js/scripts.js -->
+		<script src="app/app.js"></script>
+		<script src="app/modules/todo/todoCtrl.js"></script>
+		<script src="app/modules/todo/todoStorage.js"></script>
+		<script src="app/modules/todo/todoFocus.js"></script>
+		<script src="app/modules/todo/todoEscape.js"></script>
+    <!-- endbuild -->
+	</body>
+</html>
